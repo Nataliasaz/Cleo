@@ -1,0 +1,25 @@
+<div>
+  <p *ngFor="let items of items; let i = index;
+  let first = first; "[ngClass]="{first:first}"
+  >{{i+1}} {{items}}</p>
+  {{message}}
+  loggedId
+</div>
+<div *ngIf="loggedId; else loggedOut">
+  <p>Logget</p>
+</div>
+<ng-template #loggedOut>
+  Login please
+</ng-template>
+
+
+<!--отслеживание событий-->
+<button (click)="myEvent($event)">Event</button>
+
+<input type="text" [(ngModel)]="text">
+<p>{{text}}</p>
+
+<div [ngClass]="{class1: true}" >
+  <h1>HelloW</h1>
+  <p [ngClass]="{class2: true}">daaaaa</p>
+</div>

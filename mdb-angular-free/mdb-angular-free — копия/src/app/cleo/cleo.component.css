@@ -1,0 +1,116 @@
+html,body,header, #intro{
+  height: 100%;
+}
+#intro{
+  background: url(img/a.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.top-nav-collapse{
+  background-color: #f2c6ac;
+}
+@media(max-width: 768px){
+  .navbar:not(.top-nav-collapse){
+    background: #f2c6ac;
+  }
+}
+
+.carousel-inner img {
+  display: block;
+  height: 650px !important;
+  margin: 0 auto;
+}
+
+.carousel-next-icon, .carousel-prev-icon
+{
+  /*  display: none;*/
+  font-size: 34px;
+  color: #f2c6ac;
+}
+.mt-5,
+.my-5 {
+  margin-top: 6rem !important;
+}
+
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.btn-group{
+  position: relative;
+  width:100%
+
+}
+
+
+/*-------------*/
+
+/* ----- SIDE MENU STYLE ----- */
+
+.modal.left .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 420px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.left .modal-body {
+  /*padding: 15px 15px 80px;*/
+  padding: 0px 0px 0px;
+}
+
+.modal.left.fade .modal-dialog {
+  right: 320px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.left.fade.show .modal-dialog {
+  right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom-color: #eeeeee;
+  background-color: #fafafa;
+}
+
+.modal-header_ {
+  border-bottom-color: #FFFFFF;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  padding-right:20px;
+
+}
+
+/* ----- SIDE MENU STYLE ----- */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+

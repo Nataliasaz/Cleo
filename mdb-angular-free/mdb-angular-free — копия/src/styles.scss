@@ -1,0 +1,202 @@
+/* You can add global styles to this file, and also import other style files */
+html,body,header, #intro{
+  height: 100%;
+}
+#intro{
+  background: url(img/a.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.top-nav-collapse{
+  background-color: #f2c6ac;
+}
+@media(max-width: 768px){
+  .navbar:not(.top-nav-collapse){
+    background: #f2c6ac;
+  }
+}
+
+.carousel-inner img {
+  display: block;
+  height: 650px !important;
+  margin: 0 auto;
+}
+
+.carousel-next-icon, .carousel-prev-icon
+{
+  /*  display: none;*/
+  font-size: 34px;
+  color: #f2c6ac;
+}
+
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.btn-group{
+  position: relative;
+  width:100%
+
+}
+
+
+/*-------------*/
+
+/* ----- SIDE MENU STYLE ----- */
+
+.modal.left .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 420px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.left .modal-body {
+  /*padding: 15px 15px 80px;*/
+  padding: 0px 0px 0px;
+}
+
+.modal.left.fade .modal-dialog {
+  right: 320px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.left.fade.show .modal-dialog {
+  right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom-color: #eeeeee;
+  background-color: #fafafa;
+}
+
+.modal-header_ {
+  border-bottom-color: #FFFFFF;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  padding-right:20px;
+
+}
+
+/* ----- SIDE MENU STYLE ----- */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+//---------
+/* Styles go here */
+
+.booking-form {
+  margin-top: 20px;
+}
+.radio label {
+  text-transform: capitalize;
+}
+.preview {
+  list-style-type: none;
+  font-weight: 700;
+  padding-left: 0;
+}
+.preview li {
+  margin-bottom: 5px;
+}
+form ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+form .mealType {
+  padding: 10px 15px;
+  background-color: #ffffff;
+  cursor: pointer;
+  color: #337ab7;
+  border-radius: 4px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+}
+form .mealType span {
+  float: right;
+}
+form .mealType.active {
+  background-color: #337ab7;
+  color: #ffffff;
+}
+form .mealType.active:hover {
+  background-color: #337ab7;
+  color: #ffffff;
+}
+form .mealType.active,
+form .mealType:hover {
+  outline: none;
+}
+.form-control:focus {
+  border-color: #ccc;
+  webkit-box-shadow: none;
+  box-shadow: none;
+}
+form .mealType:hover {
+  background-color: #eee;
+  color: #f2c6ac;
+}
+form label em {
+  display: block;
+  font-size: 12px;
+}
+form textarea {
+  width: 100%;
+  min-height: 115px;
+}
+form .ng-invalid.ng-dirty {
+  border-color: #FA787E;
+}
+form .ng-valid.ng-dirty {
+  border-color: #78FA89;
+}
+form .form-valid {
+  color: #FA787E;
+}
+form .form-valid.active {
+  color: #78FA89;
+}
+.required {
+  color: red;
+}
+.btn-group .btn.btn-sm.btn-info.ng-binding {
+  display: none;
+}
+.btn-group .btn.btn-sm.btn-danger.ng-binding {
+  border-radius: 3px;
+}
